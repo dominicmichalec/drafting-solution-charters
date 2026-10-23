@@ -21,7 +21,7 @@ This skill addresses each of these. Everything in the charter traces back to a t
 
 - **Consultants and advisors** running discovery with a client or prospect. This is the primary user.
 - **Presales and solution engineers** shaping an opportunity before a proposal or statement of work.
-- **Internal consultants**, such as product, operations, transformation, or IT business partners, who run discovery with stakeholders in their own organization. The charter defines the market as *the people whose behavior you're trying to change*, so employees, partners, and communities count as well as customers.
+- **Forward deployed engineers/Internal consultants**, such as product, operations, transformation, or IT business partners, who run discovery with stakeholders in their own organization. The charter defines the market as *the people whose behavior you're trying to change*, so employees, partners, and communities count as well as customers.
 
 The skill assumes one person (the **Owner**, usually the consultant) has had the conversations, and one person on the client side (the **Decider**, the sponsor) will say "yes, this is what we're aligned on."
 
