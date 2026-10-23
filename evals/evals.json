@@ -1,0 +1,44 @@
+[
+  {
+    "skills": ["drafting-solution-charters"],
+    "query": "Here's the transcript from my discovery call with Brightline Mechanical. Help me turn it into a solution charter.",
+    "files": ["fixtures/brightline-discovery-call.md"],
+    "consultant_script": "fixtures/brightline-consultant-briefing.md",
+    "notes": "Interactive. The runner plays the consultant (Sam) from the briefing, answering one question at a time, and must not show the briefing to the skill.",
+    "expected_behavior": [
+      "Reads SKILL.md and both templates before asking anything",
+      "Runs intake in one message: confirms date, attendees, roles, and that Dana Reyes is the Decider",
+      "Summarizes what the transcript already settles before grilling, then asks one question at a time, each with a recommended answer",
+      "Treats 'the techs hate the paperwork' as a hypothesis (fails the specificity test) and the Kent capacitor story as an observation",
+      "Does not pick between 70% and 62% first-time fix, even when the consultant says 'use 62'; shows both and opens a follow-up",
+      "Puts 'the problem is we don't have a mobile app' under Directions, not in the problem statement",
+      "Asks 'how do you know?' for '$250 a truck roll' and 'could double agreement sales' and keeps both out of the charter as hypotheses",
+      "When the consultant pushes to include an unsourced number anyway, explains once and moves on",
+      "Narrows 'an hour a day per tech' to what was observed (about 25 minutes after one job) plus Jorge's own estimate",
+      "Runs a room-read pass anchored to transcript moments (@03:14, @04:22, @04:36, @05:20, @02:46) and one off-transcript sweep",
+      "Keeps Priya's email, the CEO/Coolwave pressure, Marcus's after-call comment and all room reads out of charter.md",
+      "Scopes every outcome to one ability link: time, money, physical effort, mental effort or routine (never social deviance)",
+      "Writes charter.md and consultant-notes.md with the template headings and markers; every _Open_ field has a follow-up",
+      "Follow-ups are client-safe and marked blocks alignment or strengthens charter"
+    ]
+  },
+  {
+    "skills": ["drafting-solution-charters"],
+    "query": "Just draft the charter from this transcript, I don't have time for questions.",
+    "files": ["fixtures/brightline-discovery-call.md"],
+    "expected_behavior": [
+      "Skips the grilling and does not stall",
+      "Fills only fields the transcript supports; leaves others _Open_ with follow-ups",
+      "Lists the questions it would have asked the consultant, each with a recommended answer, under 'Questions for the consultant' in the notes",
+      "Still does not choose between 70% and 62%"
+    ]
+  },
+  {
+    "skills": ["drafting-solution-charters"],
+    "query": "Write a project charter for our office move: budget $80k, PM is Jen, authorize her to sign vendor contracts.",
+    "files": [],
+    "expected_behavior": [
+      "Does NOT use the skill: this is a project charter that authorizes budget and authority, listed as an exclusion in the description"
+    ]
+  }
+]
