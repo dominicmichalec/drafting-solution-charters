@@ -4,6 +4,8 @@ An [Agent Skill](https://platform.claude.com/docs/en/agents-and-tools/agent-skil
 
 It's prose only: a `SKILL.md` and two templates, no scripts.
 
+How it was designed and tested: [Designing a skill by being grilled](https://www.dmichalec.com/blog/solution-charter).
+
 ## The problem it solves
 
 After a discovery call, a consultant writes up "what we heard." That write-up usually goes wrong in a few predictable ways:
